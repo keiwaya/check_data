@@ -53,7 +53,7 @@ def job():
                 with open("rakuten_feed_file_list_" + today.strftime('%Y%m%d') + ".dat.txt", mode="a") as k:
                         k.writelines(i + "\n")
 
-schedule.every().day.at("12:15").do(job)
+schedule.every().day.at("11:50").do(job)
 
 while True:
   schedule.run_pending()
